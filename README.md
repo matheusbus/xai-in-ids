@@ -1,2 +1,1 @@
-# xai-in-ids
- TCC - Explainable AI in IDS
+# TCC - Explainable AI in IDS

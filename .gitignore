@@ -161,4 +161,8 @@ cython_debug/
 
 .vscode
 
-project/data/raw/*
+project/data/raw/**
+!project/data/raw/.keep
+
+project/data/processed/**
+!project/data/processed/.keep

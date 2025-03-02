@@ -1,0 +1,10 @@
+Duas camadas ocultas
+- 41 neuronios em cada camada oculta (é o mesmo numero de atributos da base utilizada, nesse caso a NSLKDD tem 41)
+- Função de ativação tanh nos neuronios das camadas ocultas
+Camada de saida
+- 2 neuronios (nesse caso foi utilizada para classificacao binária)
+- Função de ativação softmax nos neuronios da camada de saida
+Treinamento:
+- Foram utilizadas 100 epocas
+- Foi utilizado otimizador adam
+- Foi utilizada função loss sparse_categorical_crossentropy

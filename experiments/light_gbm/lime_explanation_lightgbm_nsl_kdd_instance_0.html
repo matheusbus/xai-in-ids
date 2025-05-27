@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divOYRTAWURNUNWCJ6"></div>
+        <div class="lime top_div" id="top_divH2T7QFU8K00527F"></div>
         
         <script>
-        var top_div = d3.select('#top_divOYRTAWURNUNWCJ6').classed('lime top_div', true);
+        var top_div = d3.select('#top_divH2T7QFU8K00527F').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["normal", "attack"], [2.6047830559150498e-11, 0.9999999999739522]);
+            var pp = new lime.PredictProba(pp_svg, ["normal", "attack"], [2.289370915065092e-10, 0.9999999997710629]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["normal", "attack"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["service_private > -0.46", 0.1929899270684037], ["srv_serror_rate <= -0.63", -0.18880465456913806], ["count > 0.51", 0.17227229630691776], ["src_bytes <= -0.01", 0.09985850700392948], ["dst_host_srv_serror_rate <= -0.62", -0.083656335083701]], 1, exp_div);
+                exp.show([["count > 0.51", 0.19488020873747874], ["-0.63 < srv_serror_rate <= 1.61", 0.1836458358432872], ["service_private > -0.46", 0.17880351727332672], ["src_bytes <= -0.01", 0.10465580775486623], ["-0.48 < dst_host_same_src_port_rate <= -0.29", -0.08104610604925683]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["service_private", "2.18", 0.1929899270684037], ["srv_serror_rate", "-0.63", -0.18880465456913806], ["count", "1.27", 0.17227229630691776], ["src_bytes", "-0.01", 0.09985850700392948], ["dst_host_srv_serror_rate", "-0.62", -0.083656335083701]], 1, raw_div);
+            exp.show_raw_tabular([["count", "1.17", 0.19488020873747874], ["srv_serror_rate", "-0.35", 0.1836458358432872], ["service_private", "1.93", 0.17880351727332672], ["src_bytes", "-0.02", 0.10465580775486623], ["dst_host_same_src_port_rate", "-0.43", -0.08104610604925683]], 1, raw_div);
         
         </script>
         </body></html>

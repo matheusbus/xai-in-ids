@@ -1,0 +1,9 @@
+Apresentação do TCC - Anotações
+
+1- Introdução
+2- Problema dos modelos "caixa preta" no contexto de segurança da informação
+3- Justificativa
+
+Desenvolvimento:
+- Falar da base de dados NSLKDD e os atributos
+- 

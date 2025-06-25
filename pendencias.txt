@@ -1,0 +1,41 @@
+Mudanças necessárias:
+
+Introdução:
+ -OK- Revisar Objetivo Geral
+ -OK- Revisar Objetivos Específicos
+ -OK- Revisar Justificativa
+ -OK- Revisar Metodologia
+
+Fundamentação:
+ -OK- Escrevar tópicos sobre XAI
+ -- Trabalhos relacionados
+
+Desenvolvimento:
+
+ -OK- Início do desenvolvimento deve ser retomado os objetivos e deixar bem claro as escolhas que eu fiz (revisar o problema, revisar a justificativa) - deixar bem claro a escolha dos modelos, escolha dos datasets
+
+ -OK- Deixar claro qual foi a lógica utilizada para converter o dataset dos tipos de ataque para binário (ataque ou benigno)
+
+ -OK- Nos modelos, as afirmações devem estar embasadas em fontes que dão suporte ao que eu afirmei
+
+ -OK- Reavaliar se os pseudo-códigos fazem sentido, deixar bem claro no texto apenas
+
+ -OK- Sobre as figuras e tabelas, devem ser TODAS EXPLICADAS nos textos
+
+ -OK- Reavaliar a utilidade das figuras 14 e 15 - analisar o que eu estava querendo dizer com elas se eu for manter
+
+ -OK- Separar as matrizes de confusão em 3 imagens pois não está legível
+
+ -OK MAS PODE MUDAR DE ACORDO COM ALTERAÇÕES NO CÓDIGO- Detalhar como foi implementado o XAI
+
+Resultados:
+
+- Reavaliar as dimensões dos gráficos utilizados pois estão em escalas diferentes
+
+- Fazer uma relação entre o SHAP e as métricas de avaliação da cada modelo, pois mesmo 1 modelo atingindo 100% de acurácia e outro atingindo um número menor, eles parecem convergir para um mesmo lugar nos resultados do SHAP
+
+- Fazer uma análise/comparação estatística dos resultados do SHAP
+
+- Importante trazer uma discussão mais expandida do que cada técnica XAI deu como resultado
+
+https://www.datacamp.com/tutorial/introduction-to-shap-values-machine-learning-interpretability

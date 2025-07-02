@@ -38,4 +38,50 @@ Resultados:
 
 - Importante trazer uma discussão mais expandida do que cada técnica XAI deu como resultado
 
+
+TODO:
+
+- Extrair métricas SHAP de cada um dos modelos
+- Extrair métricas LIME de cada um dos modelos
+
+Métricas:
+    
+    A. Importância dos Atributos (Global)
+    B. Consistência entre métodos (comparar SHAP com LIME)
+    C. Estabilidade das Explicações
+        - Variância da importância de um mesmo atributo em diferentes instâncias
+        - Aplique ANOVA ou Kruskal-Wallis para ver se há diferença significativa entre a distribuição das importâncias entre modelos
+        - Clusterização das esplicações locais com K-Means ou DBSCAN para identificar padrões
+    D. Fidelidade das explicações locais (somente LIME)
+        - Fidelidade é a acurácia do modelo linear local que o LIME usa para explicar uma instância.
+        - Salve esse valor para cada instância e calcule:
+            - Média
+            - Desvio padrão
+            - Comparações entre modelos
+    E. Tempo de execução
+        - Tempo médio para gerar explicações com SHAP e LIME por modelo
+        - Da pra usar time.time() para medir
+    F. Visualizações úteis
+        - summary_plot do SHAP
+        - force_plot ou decision_plot para casos individuais
+        - Gráfico de barras com as top-k importâncias médias
+        - Heatmap de correlação entre métodos (spearman)
+        - Boxplots comparando a importância dos atributos entre modelos
+        - PCA ou t-SNE nas explicações locais (para clusterização visual)
+    
+📌 Exemplos de análises estatísticas
+    - "Atributo X tem importância significativamente maior no RF comparado ao MLP?"
+    - Teste t de Student (se normalidade ok) ou Mann-Whitney U
+    - "A ordem dos atributos mais importantes é semelhante entre SHAP e LIME?"
+    - Correlação de Spearman
+    - "A fidelidade do LIME é maior no modelo RF comparado ao MLP?"
+    - ANOVA ou teste de Kruskal-Wallis
+
+✅ Conclusão da análise (no seu TCC ou artigo) - Você poderá responder:
+    - Quais modelos são mais transparentes (têm explicações mais estáveis, coerentes, rápidas)?
+    - SHAP ou LIME fornece explicações mais fiéis no seu contexto?
+    - Há atributos-chave que aparecem consistentemente em todos os modelos?
+    - Qual método XAI mostra maior sensibilidade a mudanças no modelo?
+    
+
 https://www.datacamp.com/tutorial/introduction-to-shap-values-machine-learning-interpretability
